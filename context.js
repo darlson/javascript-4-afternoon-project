@@ -43,7 +43,8 @@ function Animal(name, species, food) {
   }
 }
 
-//Code Here
+var animal1 = new Animal('Jeff', 'cyborg', 'javascript')
+
 
 ////////// PROBLEM 3 //////////
 
@@ -61,7 +62,9 @@ let who = {
   location: 'Belize',
 }
 
-//Code Here
+var whoSaysHi = sayHi.bind(who) 
+// console.log(whoSaysHi("Wassup?"))
+
 
 ////////// PROBLEM 4 //////////
 

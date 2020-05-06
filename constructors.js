@@ -118,8 +118,8 @@ function Employee(name, email, hireDate) {
   // Write a prototype method for the User constructor function named removeSavedPost that will take in one number parameter representing the post id. Use this id to find and remove the matching object in the savedPosts array.
   
   User.prototype.removeSavedPost = function(id) {
-    let index = this.savedPosts.indexOf(id)
-    this.savedPosts.splice(index, 1)
+    let indexOf = this.savedPosts.indexOf(id)
+    this.savedPosts.splice(indexOf, 1)
   }
   
   ////////// PROBLEM 7 //////////
@@ -128,6 +128,11 @@ function Employee(name, email, hireDate) {
   // Write a prototype method for the User constructor function named changePostRating that will take in two number parameters. The first will be an id (a number) and the second will be the new rating (a number). Use the id to find the matching object in the savedPosts array. Once you find the matching object, update it's rating score with the new rating parameter.
   
   User.prototype.changePostRating = function(id, newRating) {
+    console.log(id)
+    console.log(newRating)
     this.savedPosts.forEach( e => (e.id === id) ? e.rating = newRating : e.rating)
+      // console.log(indexOf)
+    // this.savedPosts[indexOf].rating = newRating
+    // return this.savedPosts[indexOf].rating
   }
   
