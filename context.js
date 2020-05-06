@@ -17,7 +17,13 @@
   getUsername --> which is a function that returns the current object's username property. *Don't use 'user' instead use the 'this' keyword*
 */
 
-//Code Here
+var user = {
+  username: "username",
+  email: "username@gmail.com",
+  getUsername: function (){
+    return this.username
+  }
+}
 
 ////////// PROBLEM 2 //////////
 
