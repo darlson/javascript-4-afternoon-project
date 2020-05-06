@@ -63,7 +63,7 @@ let who = {
 }
 
 var whoSaysHi = sayHi.bind(who) 
-// console.log(whoSaysHi("Wassup?"))
+console.log(whoSaysHi("Wassup?"))
 
 
 ////////// PROBLEM 4 //////////
@@ -75,6 +75,7 @@ var whoSaysHi = sayHi.bind(who)
 function whatIsThis() {
   return this
 }
+console.log(whatIsThis())
 
 // uncomment the line below and tell us what the context of "this" is for whatIsThis()
 let context1 = whatIsThis()
